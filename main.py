@@ -4,7 +4,6 @@ import pandas as pd
 import plotly.express as px
 import os
 
-st.set_page_config(layout="wide")
 st.header('5-Year Data of 3 Areas in PJM')
 st.write('By Yun Li')
 markdown_text = '''
@@ -124,7 +123,7 @@ if load_temp_res == 'By hour':
     fig = px.scatter(
         df, x='Temperature', y='Load', color='Location',
         facet_col='Hour', facet_col_wrap=6, facet_row_spacing=0.03, height=900,
-        labels={'Temperature': 'Temperature (\u00b0C)', 'Load': 'Load (kW)'},
+        labels={'Temperature': 'T (\u00b0C)', 'Load': 'Load (kW)'},
         category_orders={'Hour': list(range(24))}
     )
 else:
