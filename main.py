@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 import os
 
+st.set_page_config(layout="wide")
 st.header('5-Year Data of 3 Areas in PJM')
 st.write('By Yun Li')
 markdown_text = '''
