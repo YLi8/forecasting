@@ -129,7 +129,7 @@ if load_temp_res == 'By hour':
 else:
     fig = px.scatter(
         df, x='Temperature', y='Load', color='Location',  facet_col='Month', facet_col_wrap=6, height=500,
-        labels={'Temperature': 'Temperature (\u00b0C)', 'Load': 'Load (kW)'}
+        labels={'Temperature': 'T (\u00b0C)', 'Load': 'Load (kW)'}
     )
 fig.update_layout(margin={'t': 30})
 
