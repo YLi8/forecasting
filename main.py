@@ -5,7 +5,7 @@ import plotly.express as px
 import os
 
 st.header('5-Year Data of 3 Areas in PJM')
-st.write('By Yun Li')
+st.write('By Winnie (Yun) Li')
 markdown_text = '''
 The data are collected from the [PJM’s Data Miner 2] (https://dataminer2.pjm.com).
 The solar data are not available before 2019, synthetic data from [PVWatts] (https://pvwatts.nrel.gov) are used. 
